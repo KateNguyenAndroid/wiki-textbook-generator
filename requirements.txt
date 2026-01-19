@@ -1,2 +1,6 @@
 Flask==2.1.2
 wikipedia-api==0.5.4
+Flask-Login==0.6.2
+Flask-WTF==0.15.1
+Flask-SQLAlchemy==2.5.1
+pdfkit==0.6.1
