@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Textbooks</title>
+</head>
+<body>
+    <h1>Your Textbooks</h1>
+    <ul>
+        {% for textbook in textbooks %}
+            <li>{{ textbook.title }} - <a href="{{ url_for('export_pdf', textbook_id=textbook.id) }}">Export PDF</a> - <a href="{{ url_for('delete_textbook', textbook_id=textbook.id) }}">Delete</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
