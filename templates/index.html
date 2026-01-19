@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki Textbook Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Welcome to the Wiki Textbook Generator!</h1>
@@ -12,6 +13,12 @@
         <input type="text" id="topics" name="topics" required><br><br>
         <input type="submit" value="Generate Textbook">
     </form>
+    <h2>Your Textbooks</h2>
+    <ul>
+        {% for textbook in textbooks %}
+            <li>{{ textbook.title }} - <a href="{{ url_for('export_pdf', textbook_id=textbook.id) }}">Export PDF</a> - <a href="{{ url_for('delete_textbook', textbook_id=textbook.id) }}">Delete</a></li>
+        {% endfor %}
+    </ul>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul>
