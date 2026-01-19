@@ -40,3 +40,6 @@ Add Features to Implement:
 3. Export Options: Export textbooks as PDF.
 4. Search Functionality: Allow users to search for Wikipedia topics.
 5. Feedback and Rating System: Allow users to rate textbooks.
+
+from main import db
+db.create_all()
