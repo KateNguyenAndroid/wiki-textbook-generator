@@ -21,3 +21,15 @@ A Python project that generates a wiki-style textbook from user-defined topics, 
    ```bash
    git clone https://github.com/your_username/wiki-textbook-generator.git
    cd wiki-textbook-generator
+2. Install the required packages:
+   pip install -r requirements.txt
+3. Running the Project
+   To run the project, execute:
+   python main.py
+   Open your web browser and go to http://127.0.0.1:5000/ to access the Wiki Textbook Generator.
+4. Usage
+   Enter multiple topics separated by commas in the input box.
+   Click on "Generate Textbook."
+   If successful, a link to the generated Markdown file will be displayed.
+5. Contributing
+   Feel free to fork the repository and submit pull requests for improvements or bug fixes.
