@@ -33,3 +33,10 @@ A Python project that generates a wiki-style textbook from user-defined topics, 
    If successful, a link to the generated Markdown file will be displayed.
 5. Contributing
    Feel free to fork the repository and submit pull requests for improvements or bug fixes.
+
+Add Features to Implement:
+1. User Authentication: Using Flask-Login.
+2. Textbook Management: Allow users to view and delete textbooks.
+3. Export Options: Export textbooks as PDF.
+4. Search Functionality: Allow users to search for Wikipedia topics.
+5. Feedback and Rating System: Allow users to rate textbooks.
